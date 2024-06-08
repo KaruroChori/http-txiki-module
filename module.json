@@ -1,8 +1,14 @@
 {
-  "$schema": "https://github.com/KaruroChori/txiki-modules/releases/download/v2.1.0/module.schema.json",
+  "$schema": "https://github.com/KaruroChori/txiki-modules/releases/download/v2.2.0/module.schema.json",
   "module-version": [2, 1, 0],
   "runtime-version": [0, 4, 1],
-  "suggested-name": "demo",
-  "native-deps": {},
+  "suggested-name": "http",
+  "native-deps": {
+    "llhttp": {
+      "url": "https://github.com/nodejs/llhttp/archive/refs/tags/release/v9.2.1.tar.gz",
+      "raw-cmake": "set(BUILD_SHARED_LIBS OFF CACHE INTERNAL \"\")\nset(BUILD_STATIC_LIBS ON CACHE INTERNAL \"\")",
+      "symbols": ["llhttp_static"]
+    }
+  },
   "module-deps": {}
 }

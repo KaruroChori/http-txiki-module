@@ -1,7 +1,7 @@
 {
-  "name": "demo-txiki-module",
-  "version": "2.1.0",
-  "description": "Demo module for txiki.js",
+  "name": "http-txiki-module",
+  "version": "1.0.0",
+  "description": "HTTP module for txiki.js",
   "type": "module",
   "packageManager": "bun@1.1.4",
   "scripts": {
